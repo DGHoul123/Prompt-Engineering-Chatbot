@@ -65,3 +65,19 @@ The article extends this concept to human social dynamics, noting that when ente
 ## Analysis & Conclusion
 
 The few-shot style summary was clearly the stronger output, as it not only conveyed the main points of Alphabyte’s article but also followed the exact “Topic” and “Summary” structure you had demonstrated earlier. Compared to the zero-shot attempt, it was more organized, matched the tone of your examples, and balanced brevity with detail, ensuring that both the overarching idea and the supporting insights were captured. The main difference lay in structure and precision—the zero-shot version flowed as a natural paragraph but lacked the formal labeling and consistent format, while the few-shot version mirrored your examples closely, offering a more professional and reusable format. The examples served as a concrete template, eliminating ambiguity about length, tone, and scope, which meant the model could focus entirely on content rather than guessing at presentation. This experiment shows how powerful prompt engineering can be: by providing explicit examples, you essentially “train” the model in real time to replicate the desired structure and style, turning a good but generic response into one that is precise, polished, and perfectly aligned with your needs.
+
+## How to Run the Code
+
+This project includes a Python script (`run_prompts.py`) to run the prompts using the Google Gemini API.
+
+1.  **Get an API Key**: Sign up for a free account on [Google AI Studio](https://aistudio.google.com/app/apikey) to get your own API key.
+
+2.  **Set Up Your Environment**: Set your API key as an environment variable on your computer.
+    * On Windows: `set GOOGLE_API_KEY="YOUR_API_KEY_HERE"`
+    * On Mac/Linux: `export GOOGLE_API_KEY="YOUR_API_KEY_HERE"`
+
+3.  **Install Libraries**: Make sure you have the necessary library installed by running:
+    `pip install google-generativeai`
+
+4.  **Run the Script**: Execute the Python file from your terminal:
+    `python run_prompts.py`
